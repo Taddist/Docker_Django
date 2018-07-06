@@ -4,7 +4,9 @@ This guide demonstrates how to use docker and docker compose to setup and run a 
 
 ## Getting Started
 
-For this project we need to have a Dockerfile,a python dependencies (requirements.txt),and docker-compose.yml file.### Prerequisites
+For this project we need to have a Dockerfile,a python dependencies (requirements.txt),and docker-compose.yml file.
+
+### Prerequisites
 
 Having Docker and Docker Compose installed.
 
