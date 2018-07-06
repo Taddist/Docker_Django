@@ -71,7 +71,9 @@ drwxr-xr-x 2 root   root   mydjangoApp
 ```
 Now we have a new directory named mydjangoApp, but it's protected because Docker runs with the root privilege.
 
-```sudo chown -R $USER:$USER .
+```
+sudo chown -R $USER:$USER .
+
 ```
 
 
