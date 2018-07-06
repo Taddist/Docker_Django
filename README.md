@@ -69,6 +69,12 @@ drwxr-xr-x 2 root   root   mydjangoApp
 -rwxr-xr-x 1 root   root   manage.py
 -rw-rw-r-- 1 user   user   requirements.txt
 ```
+Now we have a new directory named mydjangoApp, but it's protected because Docker runs with the root privilege.
+
+```sudo chown -R $USER:$USER .
+```
+
+
 ## Setup the database 
 Edit the mydjangoApp/settings.py file. Replace the DATABASES = ... with the following :
 
@@ -85,7 +91,7 @@ Edit the mydjangoApp/settings.py file. Replace the DATABASES = ... with the foll
 ```
 These settings are determined by the postgres Docker image specified in docker-compose.yml.
 ## Test the system
-Start the system typing this:
+At this point we're ready to take a look at our empty application. Run docker-compose up to start the Django server.
 ```
 docker-compose up 
 ```
